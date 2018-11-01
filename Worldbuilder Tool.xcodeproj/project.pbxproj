@@ -19,6 +19,7 @@
 		F8567F04218B95F900CBA313 /* CampaignDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567F03218B95F900CBA313 /* CampaignDetailViewController.swift */; };
 		F8567F06218B98D700CBA313 /* CampaignTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567F05218B98D700CBA313 /* CampaignTableViewController.swift */; };
 		F8567F09218BAAED00CBA313 /* DefaultCampaignDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567F08218BAAED00CBA313 /* DefaultCampaignDetailViewController.swift */; };
+		F8567F0C218BB12B00CBA313 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567F0B218BB12B00CBA313 /* NotesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F8567F03218B95F900CBA313 /* CampaignDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignDetailViewController.swift; sourceTree = "<group>"; };
 		F8567F05218B98D700CBA313 /* CampaignTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignTableViewController.swift; sourceTree = "<group>"; };
 		F8567F08218BAAED00CBA313 /* DefaultCampaignDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCampaignDetailViewController.swift; sourceTree = "<group>"; };
+		F8567F0B218BB12B00CBA313 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,8 @@
 				F8567F07218B9BF700CBA313 /* Resources */,
 				F8567EF5218B811000CBA313 /* Model */,
 				F8567EFF218B933A00CBA313 /* Model Controller */,
-				F8567F02218B95DF00CBA313 /* View Controllers */,
+				F8567F02218B95DF00CBA313 /* Campaign View Controllers */,
+				F8567F0A218BB0F300CBA313 /* Notes View Controllers */,
 			);
 			path = "Worldbuilder Tool";
 			sourceTree = "<group>";
@@ -95,14 +98,14 @@
 			path = "Model Controller";
 			sourceTree = "<group>";
 		};
-		F8567F02218B95DF00CBA313 /* View Controllers */ = {
+		F8567F02218B95DF00CBA313 /* Campaign View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				F8567F03218B95F900CBA313 /* CampaignDetailViewController.swift */,
 				F8567F08218BAAED00CBA313 /* DefaultCampaignDetailViewController.swift */,
 				F8567F05218B98D700CBA313 /* CampaignTableViewController.swift */,
 			);
-			path = "View Controllers";
+			path = "Campaign View Controllers";
 			sourceTree = "<group>";
 		};
 		F8567F07218B9BF700CBA313 /* Resources */ = {
@@ -115,6 +118,14 @@
 				F8567EEF218B80FE00CBA313 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F8567F0A218BB0F300CBA313 /* Notes View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8567F0B218BB12B00CBA313 /* NotesTableViewController.swift */,
+			);
+			path = "Notes View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +208,7 @@
 				F8567EFE218B842900CBA313 /* Note+Convenience.swift in Sources */,
 				F8567F04218B95F900CBA313 /* CampaignDetailViewController.swift in Sources */,
 				F8567F01218B936300CBA313 /* CampaignController.swift in Sources */,
+				F8567F0C218BB12B00CBA313 /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

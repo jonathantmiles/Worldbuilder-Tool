@@ -22,7 +22,7 @@ extension Campaign {
         self.name = name
         self.details = details
         self.campaignType = campaignType.rawValue
-        let set = NSSet(array: notes)
+        let set = NSOrderedSet(array: notes)
         self.notes = set
     }
 }
