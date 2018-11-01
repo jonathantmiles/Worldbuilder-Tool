@@ -19,7 +19,13 @@ class CampaignDetailViewController: UIViewController {
     private func updateViews() {
         guard isViewLoaded else { return }
         if campaign == nil {
-            campaign = CampaignController.shared.currentCampaign
+            
+//            if isFirstTimeLoaded {
+                title = "Add New Campaign"
+//            } else {
+//                campaign = CampaignController.shared.currentCampaign
+//                isFirstTimeLoaded = true
+//            }
         }
         if let campaign = campaign {
             title = campaign.name
@@ -36,10 +42,28 @@ class CampaignDetailViewController: UIViewController {
         }
     }
     
+    @IBAction func saveCampaign(_ sender: Any) {
+        
+        guard let name = nameTextField.text,
+            let details = detailsTextField.text else { return }
+        let campaignTypeIndex = campaignTypeSegmentedControl.selectedSegmentIndex
+        let campaignType = CampaignType.allCampaignTypes[campaignTypeIndex]
+        
+        if let campaign = campaign {
+            CampaignController.shared.update(campaign: campaign, withName: name, details: details, campaignType: campaignType)
+        } else {
+            CampaignController.shared.createNewCampaign(withName: name, details: details, campaignType: campaignType)
+            
+        }
+        navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func setCurrentCampaign(_ sender: Any) {
         if let campaign = campaign {
             CampaignController.shared.setCurrentCampaign(campaign: campaign)
         }
+        updateViews()
+        navigationController?.popToRootViewController(animated: true)
     }
     
     /*
@@ -59,6 +83,8 @@ class CampaignDetailViewController: UIViewController {
             updateViews()
         }
     }
+    
+    var isFirstTimeLoaded: Bool = false
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var campaignTypeSegmentedControl: UISegmentedControl!

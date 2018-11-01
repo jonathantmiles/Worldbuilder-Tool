@@ -30,13 +30,13 @@
         <!--Title-->
         <scene sceneID="JRB-yj-djd">
             <objects>
-                <viewController id="Mdk-p0-t1H" customClass="CampaignDetailViewController" customModule="Worldbuilder_Tool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mdk-p0-t1H" customClass="DefaultCampaignDetailViewController" customModule="Worldbuilder_Tool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="34C-hU-YSW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MAK-nd-dZT">
-                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <rect key="frame" x="20" y="136" width="335" height="462"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQc-Au-kHy">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -56,13 +56,13 @@
                                         </segments>
                                     </segmentedControl>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-Zr-U37">
-                                        <rect key="frame" x="0.0" y="74" width="335" height="495"/>
+                                        <rect key="frame" x="0.0" y="74" width="335" height="350"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paT-68-QyS">
-                                        <rect key="frame" x="0.0" y="577" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="432" width="335" height="30"/>
                                         <state key="normal" title="Set Current Campaign"/>
                                         <connections>
                                             <action selector="setCurrentCampaign:" destination="Mdk-p0-t1H" eventType="touchUpInside" id="TXp-kJ-Ct5"/>
@@ -86,7 +86,11 @@
                                 <segue destination="FEm-eU-Vwo" kind="show" id="j8v-hO-8M7"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BMM-ic-QFW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BMM-ic-QFW">
+                            <connections>
+                                <action selector="saveCampaign:" destination="Mdk-p0-t1H" id="VSl-mA-eT3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="campaignTypeSegmentedControl" destination="YFb-TI-CZj" id="PKg-Rv-Ku4"/>
@@ -97,9 +101,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hF-Cm-TFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322.4000000000001" y="-448.42578710644682"/>
+            <point key="canvasLocation" x="1367" y="-448"/>
         </scene>
-        <!--Title-->
+        <!--Change Campaign-->
         <scene sceneID="ZL3-jE-AIP">
             <objects>
                 <tableViewController id="FEm-eU-Vwo" customClass="CampaignTableViewController" customModule="Worldbuilder_Tool" customModuleProvider="target" sceneMemberID="viewController">
@@ -116,7 +120,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Mdk-p0-t1H" kind="show" id="AYc-5d-Q7G"/>
+                                    <segue destination="v5x-EO-cyE" kind="show" identifier="ShowCampaignDetail" id="CuO-gh-P7c"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -125,7 +129,13 @@
                             <outlet property="delegate" destination="FEm-eU-Vwo" id="cuR-jG-9Yj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="8FB-ph-Zf0"/>
+                    <navigationItem key="navigationItem" title="Change Campaign" id="8FB-ph-Zf0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ljx-ji-tdF">
+                            <connections>
+                                <segue destination="v5x-EO-cyE" kind="show" identifier="AddNewCampaign" id="AtK-Ch-zsk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyN-zm-jhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,8 +178,79 @@
             </objects>
             <point key="canvasLocation" x="383.19999999999999" y="-448.42578710644682"/>
         </scene>
+        <!--Title-->
+        <scene sceneID="95y-4q-hGS">
+            <objects>
+                <viewController id="v5x-EO-cyE" customClass="CampaignDetailViewController" customModule="Worldbuilder_Tool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TBe-aN-baO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-JR-Epv">
+                                <rect key="frame" x="20" y="136" width="335" height="462"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nyT-rq-faC">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WLH-gT-5Gb">
+                                        <rect key="frame" x="0.0" y="38" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="D&amp;D 5e"/>
+                                            <segment title="Pathfinder"/>
+                                            <segment title="Adventure World"/>
+                                            <segment title="Blades in the Dark"/>
+                                            <segment title="Fiasco"/>
+                                            <segment title="None"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BGQ-wf-Nq5">
+                                        <rect key="frame" x="0.0" y="74" width="335" height="350"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcg-ND-9uV">
+                                        <rect key="frame" x="0.0" y="432" width="335" height="30"/>
+                                        <state key="normal" title="Set Current Campaign"/>
+                                        <connections>
+                                            <action selector="setCurrentCampaign:" destination="v5x-EO-cyE" eventType="touchUpInside" id="yJI-nM-b7k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pGi-JR-Epv" firstAttribute="top" secondItem="qR9-qa-l3i" secondAttribute="top" constant="20" id="Ow6-Jx-lpN"/>
+                            <constraint firstItem="qR9-qa-l3i" firstAttribute="bottom" secondItem="pGi-JR-Epv" secondAttribute="bottom" constant="20" id="U6L-Ud-a1u"/>
+                            <constraint firstItem="pGi-JR-Epv" firstAttribute="leading" secondItem="qR9-qa-l3i" secondAttribute="leading" constant="20" id="fc9-Yb-XdY"/>
+                            <constraint firstItem="qR9-qa-l3i" firstAttribute="trailing" secondItem="pGi-JR-Epv" secondAttribute="trailing" constant="20" id="tW3-nE-Uu0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qR9-qa-l3i"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Ih4-hI-s31">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="uf2-x0-D4s">
+                            <connections>
+                                <action selector="saveCampaign:" destination="v5x-EO-cyE" id="dGg-nS-Qad"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="campaignTypeSegmentedControl" destination="WLH-gT-5Gb" id="Ix6-qQ-mQo"/>
+                        <outlet property="detailsTextField" destination="BGQ-wf-Nq5" id="7QM-jN-lk6"/>
+                        <outlet property="nameTextField" destination="nyT-rq-faC" id="N2U-1Y-1a1"/>
+                        <outlet property="setCurrentCampaignButton" destination="mcg-ND-9uV" id="nTJ-t3-GjW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJ2-PO-1Jl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3066" y="-448"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AYc-5d-Q7G"/>
+        <segue reference="CuO-gh-P7c"/>
     </inferredMetricsTieBreakers>
 </document>

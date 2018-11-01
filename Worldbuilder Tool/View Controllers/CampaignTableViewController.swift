@@ -37,11 +37,14 @@ class CampaignTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
         guard let destVC = segue.destination as? CampaignDetailViewController,
             let indexPath = tableView.indexPathForSelectedRow else { return }
-        destVC.campaign = CampaignController.shared.campaigns[indexPath.row]
+        
+        if segue.identifier == "ShowCampaignDetail" {
+            destVC.campaign = CampaignController.shared.campaigns[indexPath.row]
+        } else if segue.identifier == "AddNewCampaign" {
+            destVC.campaign = nil
+        }
     }
 
 }
