@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8567EE4218B80FC00CBA313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567EE3218B80FC00CBA313 /* AppDelegate.swift */; };
+		F8567EE9218B80FC00CBA313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8567EE7218B80FC00CBA313 /* Main.storyboard */; };
+		F8567EEB218B80FE00CBA313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8567EEA218B80FE00CBA313 /* Assets.xcassets */; };
+		F8567EEE218B80FE00CBA313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8567EEC218B80FE00CBA313 /* LaunchScreen.storyboard */; };
+		F8567EF7218B812200CBA313 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567EF6218B812200CBA313 /* CoreDataStack.swift */; };
+		F8567EFA218B824300CBA313 /* Worldbuilder Tool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8567EF8218B824300CBA313 /* Worldbuilder Tool.xcdatamodeld */; };
+		F8567EFC218B841D00CBA313 /* Campaign+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567EFB218B841D00CBA313 /* Campaign+Convenience.swift */; };
+		F8567EFE218B842900CBA313 /* Note+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567EFD218B842900CBA313 /* Note+Convenience.swift */; };
+		F8567F01218B936300CBA313 /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567F00218B936300CBA313 /* CampaignController.swift */; };
+		F8567F04218B95F900CBA313 /* CampaignDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567F03218B95F900CBA313 /* CampaignDetailViewController.swift */; };
+		F8567F06218B98D700CBA313 /* CampaignTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8567F05218B98D700CBA313 /* CampaignTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F8567EE0218B80FC00CBA313 /* Worldbuilder Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Worldbuilder Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8567EE3218B80FC00CBA313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8567EE8218B80FC00CBA313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8567EEA218B80FE00CBA313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8567EED218B80FE00CBA313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8567EEF218B80FE00CBA313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8567EF6218B812200CBA313 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F8567EF9218B824300CBA313 /* Worldbuilder Tool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Worldbuilder Tool.xcdatamodel"; sourceTree = "<group>"; };
+		F8567EFB218B841D00CBA313 /* Campaign+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Campaign+Convenience.swift"; sourceTree = "<group>"; };
+		F8567EFD218B842900CBA313 /* Note+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+Convenience.swift"; sourceTree = "<group>"; };
+		F8567F00218B936300CBA313 /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
+		F8567F03218B95F900CBA313 /* CampaignDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignDetailViewController.swift; sourceTree = "<group>"; };
+		F8567F05218B98D700CBA313 /* CampaignTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8567EDD218B80FC00CBA313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8567ED7218B80FC00CBA313 = {
+			isa = PBXGroup;
+			children = (
+				F8567EE2218B80FC00CBA313 /* Worldbuilder Tool */,
+				F8567EE1218B80FC00CBA313 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8567EE1218B80FC00CBA313 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8567EE0218B80FC00CBA313 /* Worldbuilder Tool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8567EE2218B80FC00CBA313 /* Worldbuilder Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F8567F07218B9BF700CBA313 /* Resources */,
+				F8567EF5218B811000CBA313 /* Model */,
+				F8567EFF218B933A00CBA313 /* Model Controller */,
+				F8567F02218B95DF00CBA313 /* View Controllers */,
+			);
+			path = "Worldbuilder Tool";
+			sourceTree = "<group>";
+		};
+		F8567EF5218B811000CBA313 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8567EF6218B812200CBA313 /* CoreDataStack.swift */,
+				F8567EF8218B824300CBA313 /* Worldbuilder Tool.xcdatamodeld */,
+				F8567EFB218B841D00CBA313 /* Campaign+Convenience.swift */,
+				F8567EFD218B842900CBA313 /* Note+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F8567EFF218B933A00CBA313 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F8567F00218B936300CBA313 /* CampaignController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		F8567F02218B95DF00CBA313 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8567F03218B95F900CBA313 /* CampaignDetailViewController.swift */,
+				F8567F05218B98D700CBA313 /* CampaignTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F8567F07218B9BF700CBA313 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8567EE7218B80FC00CBA313 /* Main.storyboard */,
+				F8567EE3218B80FC00CBA313 /* AppDelegate.swift */,
+				F8567EEA218B80FE00CBA313 /* Assets.xcassets */,
+				F8567EEC218B80FE00CBA313 /* LaunchScreen.storyboard */,
+				F8567EEF218B80FE00CBA313 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8567EDF218B80FC00CBA313 /* Worldbuilder Tool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8567EF2218B80FE00CBA313 /* Build configuration list for PBXNativeTarget "Worldbuilder Tool" */;
+			buildPhases = (
+				F8567EDC218B80FC00CBA313 /* Sources */,
+				F8567EDD218B80FC00CBA313 /* Frameworks */,
+				F8567EDE218B80FC00CBA313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Worldbuilder Tool";
+			productName = "Worldbuilder Tool";
+			productReference = F8567EE0218B80FC00CBA313 /* Worldbuilder Tool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8567ED8218B80FC00CBA313 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jonathan T. Miles";
+				TargetAttributes = {
+					F8567EDF218B80FC00CBA313 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F8567EDB218B80FC00CBA313 /* Build configuration list for PBXProject "Worldbuilder Tool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8567ED7218B80FC00CBA313;
+			productRefGroup = F8567EE1218B80FC00CBA313 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8567EDF218B80FC00CBA313 /* Worldbuilder Tool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8567EDE218B80FC00CBA313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8567EEE218B80FE00CBA313 /* LaunchScreen.storyboard in Resources */,
+				F8567EEB218B80FE00CBA313 /* Assets.xcassets in Resources */,
+				F8567EE9218B80FC00CBA313 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8567EDC218B80FC00CBA313 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8567EFC218B841D00CBA313 /* Campaign+Convenience.swift in Sources */,
+				F8567F06218B98D700CBA313 /* CampaignTableViewController.swift in Sources */,
+				F8567EF7218B812200CBA313 /* CoreDataStack.swift in Sources */,
+				F8567EE4218B80FC00CBA313 /* AppDelegate.swift in Sources */,
+				F8567EFA218B824300CBA313 /* Worldbuilder Tool.xcdatamodeld in Sources */,
+				F8567EFE218B842900CBA313 /* Note+Convenience.swift in Sources */,
+				F8567F04218B95F900CBA313 /* CampaignDetailViewController.swift in Sources */,
+				F8567F01218B936300CBA313 /* CampaignController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8567EE7218B80FC00CBA313 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8567EE8218B80FC00CBA313 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8567EEC218B80FE00CBA313 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8567EED218B80FE00CBA313 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8567EF0218B80FE00CBA313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8567EF1218B80FE00CBA313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8567EF3218B80FE00CBA313 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = "$(SRCROOT)/Worldbuilder Tool/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Worldbuilder-Tool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8567EF4218B80FE00CBA313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = "$(SRCROOT)/Worldbuilder Tool/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Worldbuilder-Tool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8567EDB218B80FC00CBA313 /* Build configuration list for PBXProject "Worldbuilder Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8567EF0218B80FE00CBA313 /* Debug */,
+				F8567EF1218B80FE00CBA313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8567EF2218B80FE00CBA313 /* Build configuration list for PBXNativeTarget "Worldbuilder Tool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8567EF3218B80FE00CBA313 /* Debug */,
+				F8567EF4218B80FE00CBA313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8567EF8218B824300CBA313 /* Worldbuilder Tool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8567EF9218B824300CBA313 /* Worldbuilder Tool.xcdatamodel */,
+			);
+			currentVersion = F8567EF9218B824300CBA313 /* Worldbuilder Tool.xcdatamodel */;
+			path = "Worldbuilder Tool.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F8567ED8218B80FC00CBA313 /* Project object */;
+}

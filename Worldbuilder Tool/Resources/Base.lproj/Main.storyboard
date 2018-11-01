@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sS8-ab-mz0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="ujd-jC-e0y">
+            <objects>
+                <viewController id="nuk-rw-bko" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hMp-YZ-hgn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="t5m-CP-NGt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Ova-rP-EGY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Yu-tv-3gN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="219"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="JRB-yj-djd">
+            <objects>
+                <viewController id="Mdk-p0-t1H" customClass="CampaignDetailViewController" customModule="Worldbuilder_Tool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="34C-hU-YSW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MAK-nd-dZT">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQc-Au-kHy">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YFb-TI-CZj">
+                                        <rect key="frame" x="0.0" y="38" width="335" height="29"/>
+                                        <segments>
+                                            <segment title="D&amp;D 5e"/>
+                                            <segment title="Pathfinder"/>
+                                            <segment title="Adventure World"/>
+                                            <segment title="Blades in the Dark"/>
+                                            <segment title="Fiasco"/>
+                                            <segment title="None"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0ZM-Zr-U37">
+                                        <rect key="frame" x="0.0" y="74" width="335" height="495"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paT-68-QyS">
+                                        <rect key="frame" x="0.0" y="577" width="335" height="30"/>
+                                        <state key="normal" title="Set Current Campaign"/>
+                                        <connections>
+                                            <action selector="setCurrentCampaign:" destination="Mdk-p0-t1H" eventType="touchUpInside" id="TXp-kJ-Ct5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MAK-nd-dZT" firstAttribute="top" secondItem="Cld-QV-EEk" secondAttribute="top" constant="20" id="KNl-PB-iP3"/>
+                            <constraint firstItem="MAK-nd-dZT" firstAttribute="leading" secondItem="Cld-QV-EEk" secondAttribute="leading" constant="20" id="bF9-lV-x4h"/>
+                            <constraint firstItem="Cld-QV-EEk" firstAttribute="trailing" secondItem="MAK-nd-dZT" secondAttribute="trailing" constant="20" id="f9s-pT-xNC"/>
+                            <constraint firstItem="Cld-QV-EEk" firstAttribute="bottom" secondItem="MAK-nd-dZT" secondAttribute="bottom" constant="20" id="jPu-5C-VyN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Cld-QV-EEk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="fyz-Y2-pMN">
+                        <barButtonItem key="leftBarButtonItem" title="Change Campaign" id="Tv3-8y-9ir">
+                            <connections>
+                                <segue destination="FEm-eU-Vwo" kind="show" id="j8v-hO-8M7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BMM-ic-QFW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="campaignTypeSegmentedControl" destination="YFb-TI-CZj" id="PKg-Rv-Ku4"/>
+                        <outlet property="detailsTextField" destination="0ZM-Zr-U37" id="LIY-a3-ONF"/>
+                        <outlet property="nameTextField" destination="YQc-Au-kHy" id="cdr-sL-c0s"/>
+                        <outlet property="setCurrentCampaignButton" destination="paT-68-QyS" id="LHn-rL-XTZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7hF-Cm-TFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1322.4000000000001" y="-448.42578710644682"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="ZL3-jE-AIP">
+            <objects>
+                <tableViewController id="FEm-eU-Vwo" customClass="CampaignTableViewController" customModule="Worldbuilder_Tool" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="msX-Cp-6tZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CampaignCell" id="Xww-MI-MTE">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xww-MI-MTE" id="cjx-zv-6em">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Mdk-p0-t1H" kind="show" id="AYc-5d-Q7G"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FEm-eU-Vwo" id="y1S-EI-tsC"/>
+                            <outlet property="delegate" destination="FEm-eU-Vwo" id="cuR-jG-9Yj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="8FB-ph-Zf0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyN-zm-jhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="-448"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Nfg-yA-lFM">
+            <objects>
+                <tabBarController id="sS8-ab-mz0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eYd-0y-rOt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qAx-wd-DmJ" kind="relationship" relationship="viewControllers" id="x5M-nV-aKf"/>
+                        <segue destination="nuk-rw-bko" kind="relationship" relationship="viewControllers" id="snE-R5-qta"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxd-OS-EGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-568" y="-116"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="vMg-YZ-iLD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qAx-wd-DmJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="nKK-9J-W28"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="IH4-eF-Xkt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mdk-p0-t1H" kind="relationship" relationship="rootViewController" id="bVy-9T-cr3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJW-pk-ZVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383.19999999999999" y="-448.42578710644682"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AYc-5d-Q7G"/>
+    </inferredMetricsTieBreakers>
+</document>
